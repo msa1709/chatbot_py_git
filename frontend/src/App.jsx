@@ -119,7 +119,7 @@ const App = () => {
       parts: [{ text: msg.content }],
     }));
     try { 
-         const res = await fetch("http://127.0.0.1:8000/api/hello/");
+         const res = await fetch("https://chatbot-py-git-4.onrender.com/api/hello/");
          const data = await res.json();
          const responseText = data.message;
          typingEffect(responseText, botMessageId);
